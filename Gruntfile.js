@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-testcafe');
+	grunt.loadNpmTasks('grunt-testcafe');
 
 	grunt.registerTask('tests', ['jshint']);
 	grunt.registerTask('default', ['tests', 'version', 'uglify:dist', 'testcafe']);
